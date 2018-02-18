@@ -7,22 +7,37 @@
 {% block content %}
 <main id="content" role="main">
 
-  {% include "includes/breadcrumb_examples.html" %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="breadcrumbs">
+        <ol>
+          <li><a href="/">index</a></li>
+          <li><a href="/examples">page2</a></li>
+          <li><a href="/examples">page3</a></li>
+        </ol>
+      </div>
 
   <div class="grid-row">
     <div class="column-two-thirds">
 
         <h1 class="heading-xlarge">
-          Under 18
+          State Pension
         </h1>
 
         <p>
-          Congratulations, you are under 18.
-        </p>
+          <div class="data">
+            <span class="data-item bold-xsmall">Your State Pension age is</span>
+      <span class="data-item bold-xxlarge">68</span>
 
-        <p>
-          <a href="/docs/examples/branching">Back to the branching example</a>
+    </div>
         </p>
+        <p>
+          <div class="data">
+            <span class="data-item bold-xsmall">In the year</span>
+        <span class="data-item bold-xxlarge">2055</span>
+
+        </div>
+
 
     </div>
   </div>
