@@ -14,19 +14,18 @@
     <div class="content">
       <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
       <nav id="proposition-menu">
-        <a href="/docs" id="proposition-name">
+        <a href="/" id="proposition-name">
+          {# Set serviceName in config.js. Use a block to override on a page. #}
           {% block service_name %}
-            Prototype kit
+            {% if serviceName %} {{ serviceName }} {% endif %}
           {% endblock %}
         </a>
-
+        <!--
         <ul id="proposition-links">
-          <li><a href="/docs/install">Install</a></li>
-          <li><a href="/docs/tutorials-and-examples">Tutorials and examples</a></li>
-          <li><a href="/docs/about">About</a></li>
-          <li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
+          <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
+          <li><a href="url-to-page-2">Navigation item #2</a></li>
         </ul>
-
+        -->
       </nav>
     </div>
   </div>
@@ -48,6 +47,9 @@
 {% endblock %}
 
 {% block body_end %}
-  {% include "includes/scripts.html" %}
+  {% block scripts %}
+    {% include "includes/scripts.html" %}
+    {% block page_scripts %}{% endblock %}
+  {% endblock %}
   <!-- GOV.UK Prototype kit {{releaseVersion}} -->
 {% endblock %}

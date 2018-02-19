@@ -1,30 +1,108 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Example - Branching - Over 18
+  GOV.UK prototype kit
 {% endblock %}
 
 {% block content %}
+
 <main id="content" role="main">
-
-  {% include "includes/breadcrumb_examples.html" %}
-
   <div class="grid-row">
     <div class="column-two-thirds">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">prototype</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+
+
+        <div class="grid-row">
+          <div class="column-two-thirds">
+            <div class="breadcrumbs">
+              <ol>
+                <li><a href="/">index</a></li>
+                <li><a href="/page2-2">page2</a></li>
+              </ol>
+            </div>
+
+
 
         <h1 class="heading-xlarge">
-          State Pension
+          Your Pension
         </h1>
 
         <p>
-          Congratulations, you are over 18.
-        </p>
 
-        <p>
-          <a href="/docs/examples/branching">Back to the branching example</a>
-        </p>
+  <div class="example">
+    <div class="grid-row">
+      <div class="column-one-half">
+        <div class="data">
+            <span class="data-item bold-xsmall">Your State Pension age is</span>
+      <span class="data-item bold-xxlarge">65</span>
 
     </div>
+
+      </div>
+      <div class="column-one-half">
+        <div class="data">
+            <span class="data-item bold-xsmall">In the year</span>
+        <span class="data-item bold-xxlarge">2053</span>
+      </div>
+    </div>  </div>
+      <table>
+
+  <caption class="heading-small">Icome and Outcomes</caption>
+  <tbody>
+    <tr>
+      <td>Weekely</td>
+      <td>£000.00</td>
+        <td>-£000.00</td>
+    </tr>
+    <tr>
+      <td>Monthly</td>
+      <td>£000.00</td>
+      <td>-£000.00</td>
+    </tr>
+    <tr>
+      <td>Yearly</td>
+      <td>£0,000.00</td>
+      <td>-£0,000.00</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
   </div>
-</main>
-{% endblock %}
+        </div>
+        <h2 class="heading-medium">
+                Total: £000
+              </h2>
+            </div>
+            </div>
+          </div>
+          <main id="content" role="main">
+
+            <div class="grid-row">
+              <div class="column-two-thirds">
+                <h1 class="heading-large">
+                  Subheading
+                </h1>
+
+
+
+                <div class="form-group">
+                  <p>
+                    <a href="/index.html">
+                      Return to the start.
+                    </a>
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </main>
+        </main>
+        {% endblock %}
