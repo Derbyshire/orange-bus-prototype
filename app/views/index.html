@@ -1,23 +1,38 @@
+
+
 {% extends "layout.html" %}
 
 {% block page_title %}
   GOV.UK prototype kit
 {% endblock %}
 
+{% block service_name %}
+
+{% endblock %}
+
 {% block content %}
+
 
 <main id="content" role="main">
   <div class="grid-row">
-    <div class="column-two-thirds">
-      <div class="phase-banner">
+    <div class="column-full">
+        <div class="phase-banner">
         <p>
           <strong class="phase-tag">prototype</strong>
           <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
         </p>
       </div>
+    </div>
+    <div class="column-two-thirds">
+      <div class="breadcrumbs">
+                    <ol>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Pensions</a></li>
+                    </ol>
+                  </div>
       <h1 class="heading-xlarge">
         Pension Tool
-        <span class="heading-secondary">v0.0.1</span>
+  <!--      <span class="heading-secondary">v0.0.1</span> -->
       </h1>
 
       </p><section class="intro">
@@ -56,6 +71,33 @@
 
     </div>
   </div>
+
+  <div class="column-third">
+
+{% block sidebar %}
+    <aside class="govuk-related-items" role="complementary">
+      <h2 class="heading-medium" id="subsection-title">Pensions</h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="font-xsmall">
+          <li><a href="#">Link to page</a></li>
+          <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Link to page</span></a></li>
+        </ul>
+      </nav>
+      <h2 class="heading-medium" id="subsection-title">Elsewhere on GOV.UK</h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="font-xsmall">
+          <li>
+            <a href="#">Link to page</a>
+          </li>
+          <li><a href="#">Link to page</a></li>
+        </ul>
+      </nav>
+
+
+    </aside>
+{% endblock %}
+  </div>
+
 </main>
 
 {% endblock %}
